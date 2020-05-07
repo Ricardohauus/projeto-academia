@@ -1,13 +1,16 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <form action="/instructors" method="post">
+  <form method="POST" {% if instructor.id != null %} action="/instructors?_method=PUT" {% endif %}>
     <div class="card">
       <section class="avatar" style="background:url(https://source.unsplash.com/collection/3465564/400x400) no-repeat center center / cover"></section>
       <section class="details">
-
-        <h3>Novo Instrutor</h3>
-
+        {% if instructor.id != null %}
+          <input type="hidden" name="id" value="{{instructor.id}}">
+          <h3>Editar Instrutor</h3>
+        {% else %}
+          <h3>Novo Instrutor</h3>
+        {% endif %}
         <div class="item">
           <div>Avatar</div>
           <div><input type="url" name="avatar_url" placeholder="http://" required="required" value="{{instructor.avatar_url}}"></div>
@@ -45,7 +48,15 @@
             <input type="text" name="services" value="{{instructor.services}}" placeholder="Separe os serviços prestados por virgula">
           </div>
         </div>
-        <button type="submit">Salvar</button>
+
+        <button type="submit">
+          {% if instructor.id == null %}
+            Salvar
+          {% else %}
+            Editar
+          {% endif %}
+        </button>
+
       </form>
     </section>
   </div>

@@ -1,7 +1,8 @@
 const fs = require("fs")
 const data = require("../data.json")
 const moment = require("moment")
-exports.post = function (req, res) {
+
+exports.saveOrUpdate = function (req, res) {
 
   const keys = Object.keys(req.body)
 
@@ -20,12 +21,18 @@ exports.post = function (req, res) {
     data.instructors.push({
       id, name, avatar_url, birth, services, gender, created_at
     });
+    console.log("entrou em salvar 2");
   } else {
+    console.log("entrou em editar");
     const foundInstructor = data.instructors.find(function (instructor) {
       return id == instructor.id
     })
     if (!foundInstructor) return send("Instrutor não encontrado!")
-    data.instructors[id - 1] = "";
+    const instructor = {
+      ...foundInstructor,
+      avatar_url, birth, name, services, gender
+    }
+    data.instructors[id - 1] = instructor;
   }
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
@@ -53,34 +60,6 @@ exports.show = function (req, res) {
   } : "";
 
   return foundInstructor != null ? res.render("../views/instructors/show", { instructor }) : res.send("Não encontrou");
-}
-
-exports.put = function (req, res) {
-  const { id } = req.params
-
-  const keys = Object.keys(req.body)
-
-  for (key of keys) {
-    if (req.body[key] == "") {
-      return res.send("Por favor, preencha todos os campos!")
-    }
-  }
-
-  let { avatar_url, birth, name, services, gender } = req.body;
-
-  birth = Date.parse(req.body.birth);
-
-  data.instructors.push({
-    id, name, avatar_url, birth, services, gender
-  });
-
-  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
-    if (err) return res.send("Write file error")
-
-    return res.redirect("/instructors")
-  })
-
-
 }
 
 exports.edit = function (req, res) {
