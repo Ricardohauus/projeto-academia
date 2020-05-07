@@ -1,6 +1,6 @@
 const fs = require("fs")
 const data = require("../data.json")
-
+const moment = require("moment")
 exports.post = function (req, res) {
 
   const keys = Object.keys(req.body)
@@ -31,17 +31,19 @@ exports.post = function (req, res) {
 
 exports.show = function (req, res) {
   const { id } = req.params
-
+  moment.locale("pt-br");
   const foundInstructor = data.instructors.find(function (instructor) {
     return id == instructor.id
   })
 
+
+
   const instructor = {
     ...foundInstructor,
-    age: "",
-    gender: "",
-    services: "",
-    created_at: "",
+    age: moment().diff(foundInstructor.birth, 'years', false),
+    gender: foundInstructor.gender === "M" ? "Masculino" : "Feminino",
+    services: foundInstructor.services.split(","),
+    created_at: moment(foundInstructor.created_at).format('L'),
   }
 
   foundInstructor != null ? res.render("../views/instructors/show", { instructor }) : res.send("Não encontrou");

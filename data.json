@@ -1,3 +1,22 @@
 {
-    "instructors": []
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Ricardo",
+      "avatar_url": "http://localhost:3000/instructors/create",
+      "birth": 1589414400000,
+      "services": "xxxxx3,3,4,5,5",
+      "gender": "M",
+      "created_at": 1588861597078
+    },
+    {
+      "id": 2,
+      "name": "Ronaldo",
+      "avatar_url": "https://unsplash.com/collections/3465564/gym---workout---training",
+      "birth": 796608000000,
+      "services": "Crossfit, musculação, boxe",
+      "gender": "M",
+      "created_at": 1588864912614
+    }
+  ]
 }
