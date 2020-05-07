@@ -10,6 +10,7 @@ routes.get("/instructors", function (req, res) {
 })
 
 routes.post("/instructors", Instructors.post)
+routes.get("/instructor/:id", Instructors.show)
 
 routes.get("/instructors/create", function (req, res) {
   return res.render("instructors/create")

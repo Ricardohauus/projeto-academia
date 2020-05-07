@@ -28,3 +28,21 @@ exports.post = function (req, res) {
 
 
 }
+
+exports.show = function (req, res) {
+  const { id } = req.params
+
+  const foundInstructor = data.instructors.find(function (instructor) {
+    return id == instructor.id
+  })
+
+  const instructor = {
+    ...foundInstructor,
+    age: "",
+    gender: "",
+    services: "",
+    created_at: "",
+  }
+
+  foundInstructor != null ? res.render("../views/instructors/show", { instructor }) : res.send("Não encontrou");
+}
