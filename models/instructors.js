@@ -14,16 +14,17 @@ exports.saveOrUpdate = function (req, res) {
 
   let { id, avatar_url, birth, name, services, gender } = req.body;
   birth = Date.parse(req.body.birth);
+  let editar = false;
 
   if (id == null) {
+
     const created_at = Date.now();
     id = Number(data.instructors.length) + 1;
     data.instructors.push({
       id, name, avatar_url, birth, services, gender, created_at
     });
-    console.log("entrou em salvar 2");
   } else {
-    console.log("entrou em editar");
+    editar = true
     const foundInstructor = data.instructors.find(function (instructor) {
       return id == instructor.id
     })
@@ -38,7 +39,7 @@ exports.saveOrUpdate = function (req, res) {
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
     if (err) return res.send("Write file error")
 
-    return res.redirect("/instructors")
+    return editar ? res.redirect(`/instructors/${id}`) : res.redirect(`/instructors`)
   })
 }
 

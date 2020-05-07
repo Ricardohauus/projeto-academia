@@ -2,11 +2,11 @@
   "instructors": [
     {
       "id": 1,
-      "name": "Ricardo",
+      "name": "Ricardo Brasil da Silva",
       "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      "birth": 1589328000000,
+      "birth": 799977600000,
       "services": "Abdominal, Crossfit, JiuJitsu",
-      "gender": "M",
+      "gender": "F",
       "created_at": 1588861597078
     },
     {
