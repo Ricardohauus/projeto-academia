@@ -10,29 +10,28 @@
 
         <div class="item">
           <div>Avatar</div>
-          <div><input type="url" name="avatar_url" placeholder="http://" required="required" value="{{instructor.avatar_url}}"></div>
+          <div><input type="url" name="avatar_url" placeholder="http://" required="required"></div>
         </div>
 
         <div class="item">
           <div>Instrutor</div>
-          <div><input type="text" name="name" placeholder="Nome do Instrutor" value="{{instructor.name}}"></div>
+          <div><input type="text" name="name" placeholder="Nome do Instrutor"></div>
         </div>
 
         <div class="item">
-          <div>Data de Nascimento
-            {{instructor.birth}}</div>
-          <div><input type="date" name="birth" value="{{instructor.birth}}"></div>
+          <div>Data de Nascimento</div>
+          <div><input type="date" name="birth"></div>
         </div>
 
         <div class="item">
           <div>Sexo</div>
           <div>
             <span>
-              <input type="radio" name="gender" checked="checked" value="M">
+              <input type="radio" name="gender" id="" checked="checked" value="M">
               Masculino
             </span>
             <span>
-              <input type="radio" name="gender" {% if instructor.gender == "F" %} checked="checked" {% endif %} value="F">
+              <input type="radio" name="gender" id="" value="F">
               Feminino
             </span>
 
@@ -42,7 +41,7 @@
         <div class="item">
           <div>Área de Atuação</div>
           <div>
-            <input type="text" name="services" value="{{instructor.services}}" placeholder="Separe os serviços prestados por virgula">
+            <input type="text" name="services" placeholder="Separe os serviços prestados por virgula">
           </div>
         </div>
         <button type="submit">Salvar</button>

@@ -10,11 +10,15 @@ routes.get("/instructors", function (req, res) {
 })
 
 routes.post("/instructors", Instructors.post)
-routes.get("/instructor/:id", Instructors.show)
 
 routes.get("/instructors/create", function (req, res) {
   return res.render("instructors/create")
 })
+
+routes.get("/instructors/:id", Instructors.show)
+
+
+routes.get("/instructors/edit/:id", Instructors.edit)
 
 routes.get("/members", function (req, res) {
 
