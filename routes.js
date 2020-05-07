@@ -21,6 +21,7 @@ routes.get("/members", function (req, res) {
 
 routes.post("/instructors", Instructors.saveOrUpdate)
 routes.put("/instructors", Instructors.saveOrUpdate)
+routes.delete("/instructors", Instructors.delete)
 
 
 

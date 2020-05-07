@@ -79,3 +79,18 @@ exports.edit = function (req, res) {
 
   return foundInstructor != null ? res.render("../views/instructors/create", { instructor }) : res.send("Não encontrou");
 }
+
+exports.delete = function (req, res) {
+  const { id } = req.body;
+  console.log(id);
+
+  const filteredInstructor = data.instructors.filter(function (instructor) {
+    console.log(instructor.id != id ? true : false);
+    return instructor.id != id ? true : false;
+  })
+  data.instructors = filteredInstructor;
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) return res.send("Write file error")
+    return res.redirect(`/instructors`)
+  })
+}
