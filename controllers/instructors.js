@@ -6,6 +6,10 @@ exports.index = function (req, res) {
   return res.render("../views/instructors/index", { instructors: data.instructors })
 }
 
+exports.create = function (req, res) {
+  return res.render("instructors/create")
+}
+
 exports.saveOrUpdate = function (req, res) {
 
   const keys = Object.keys(req.body)

@@ -5,7 +5,9 @@ const moment = require("moment")
 exports.index = function (req, res) {
   return res.render("../views/members/index", { members: data.members })
 }
-
+exports.create = function (req, res) {
+  return res.render("members/create")
+}
 exports.saveOrUpdate = function (req, res) {
 
   const keys = Object.keys(req.body)
@@ -16,7 +18,7 @@ exports.saveOrUpdate = function (req, res) {
     }
   }
 
-  let { id, avatar_url, birth, name, services, gender } = req.body;
+  let { id, avatar_url, birth, name, gender } = req.body;
   birth = Date.parse(req.body.birth);
   let editar = false;
 
@@ -25,7 +27,7 @@ exports.saveOrUpdate = function (req, res) {
     const created_at = Date.now();
     id = Number(data.members.length) + 1;
     data.members.push({
-      id, name, avatar_url, birth, services, gender, created_at
+      id, name, avatar_url, birth, gender, created_at
     });
   } else {
     editar = true
@@ -39,7 +41,7 @@ exports.saveOrUpdate = function (req, res) {
     if (!foundMember) return send("Membro não encontrado!")
     const member = {
       ...foundMember,
-      avatar_url, birth, name, services, gender
+      avatar_url, birth, name, gender
     }
     data.members[index] = member;
   }
@@ -64,7 +66,6 @@ exports.show = function (req, res) {
     ...foundMember,
     age: moment().diff(foundMember.birth, 'years', false),
     gender: foundMember.gender === "M" ? "Masculino" : "Feminino",
-    services: foundMember.services.split(","),
     created_at: moment(foundMember.created_at).format('L')
   } : "";
 
