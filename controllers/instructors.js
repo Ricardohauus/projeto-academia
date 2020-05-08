@@ -90,10 +90,8 @@ exports.edit = function (req, res) {
 
 exports.delete = function (req, res) {
   const { id } = req.body;
-  console.log(id);
 
   const filteredInstructor = data.instructors.filter(function (instructor) {
-    console.log(instructor.id != id ? true : false);
     return instructor.id != id ? true : false;
   })
   data.instructors = filteredInstructor;
