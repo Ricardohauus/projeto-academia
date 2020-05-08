@@ -20,9 +20,9 @@
     },
     {
       "id": 4,
-      "name": "Ingrid Thais",
+      "name": "Ingrid Thais Lopes",
       "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
+      "birth": 700704000000,
       "services": "Musculação, Crossfit, Samba",
       "gender": "F",
       "created_at": 1588875776762
@@ -62,51 +62,6 @@
       "services": "Musculação, Crossfit, Samba",
       "gender": "F",
       "created_at": 1588876555728
-    },
-    {
-      "id": 9,
-      "name": "Ingrid",
-      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
-      "services": "Musculação, Crossfit, Samba",
-      "gender": "F",
-      "created_at": 1588876608139
-    },
-    {
-      "id": 10,
-      "name": "Ingrid",
-      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
-      "services": "Musculação, Crossfit, Samba",
-      "gender": "F",
-      "created_at": 1588876713813
-    },
-    {
-      "id": 11,
-      "name": "Ingrid",
-      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
-      "services": "Musculação, Crossfit, Samba",
-      "gender": "F",
-      "created_at": 1588876743848
-    },
-    {
-      "id": 12,
-      "name": "Ingrid",
-      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
-      "services": "Musculação, Crossfit, Samba",
-      "gender": "F",
-      "created_at": 1588876755198
-    },
-    {
-      "id": 13,
-      "name": "Ingrid",
-      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-      "birth": 700876800000,
-      "services": "Musculação, Crossfit, Samba",
-      "gender": "F",
-      "created_at": 1588876869810
     }
   ]
 }
