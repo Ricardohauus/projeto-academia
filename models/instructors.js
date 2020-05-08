@@ -29,15 +29,19 @@ exports.saveOrUpdate = function (req, res) {
     });
   } else {
     editar = true
-    const foundInstructor = data.instructors.find(function (instructor) {
-      return id == instructor.id
+    let index = 0;
+    const foundInstructor = data.instructors.find(function (instructor, foundIndex) {
+      if (id == instructor.id) {
+        index = foundIndex;
+        return true
+      }
     })
     if (!foundInstructor) return send("Instrutor não encontrado!")
     const instructor = {
       ...foundInstructor,
       avatar_url, birth, name, services, gender
     }
-    data.instructors[id - 1] = instructor;
+    data.instructors[index] = instructor;
   }
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
