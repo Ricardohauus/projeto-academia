@@ -102,17 +102,25 @@
       "id": 3,
       "name": "Alan",
       "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      "birth": 733363200000,
+      "birth": 733276800000,
       "gender": "M",
-      "created_at": 1588957433056
+      "created_at": 1588957433056,
+      "email": "a@a.a",
+      "blood": "A1",
+      "weight": "75",
+      "height": "180"
     },
     {
       "id": 4,
       "name": "estagio",
       "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      "birth": 1590537600000,
+      "birth": 328147200000,
       "gender": "F",
-      "created_at": 1588957471828
+      "created_at": 1588957471828,
+      "email": "a@a.a",
+      "blood": "B1",
+      "weight": "65",
+      "height": "155"
     }
   ]
 }
