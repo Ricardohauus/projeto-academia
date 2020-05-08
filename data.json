@@ -1,67 +1,86 @@
 {
-    "instructors": [{
-            "id": 1,
-            "name": "Ricardo Brasil da Silva",
-            "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-            "birth": 799977600000,
-            "services": "Abdominal, Crossfit, JiuJitsu",
-            "gender": "F",
-            "created_at": 1588861597078
-        },
-        {
-            "id": 2,
-            "name": "Ronaldo",
-            "avatar_url": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-            "birth": 796608000000,
-            "services": "Crossfit, musculação, boxe",
-            "gender": "M",
-            "created_at": 1588864912614
-        },
-        {
-            "id": 4,
-            "name": "Ingrid Thais Lopes",
-            "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-            "birth": 700704000000,
-            "services": "Musculação, Crossfit, Samba",
-            "gender": "F",
-            "created_at": 1588875776762
-        },
-        {
-            "id": 5,
-            "name": "Ingrid 2",
-            "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-            "birth": 700876800000,
-            "services": "Musculação, Crossfit, Samba",
-            "gender": "F",
-            "created_at": 1588876365105
-        },
-        {
-            "id": 6,
-            "name": "Ingrid 2",
-            "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-            "birth": 700876800000,
-            "services": "Musculação, Crossfit, Samba",
-            "gender": "F",
-            "created_at": 1588876460103
-        },
-        {
-            "id": 7,
-            "name": "Ingrid 2",
-            "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-            "birth": 700876800000,
-            "services": "Musculação, Crossfit, Samba",
-            "gender": "F",
-            "created_at": 1588876536026
-        },
-        {
-            "id": 8,
-            "name": "Ingrid 2",
-            "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
-            "birth": 700876800000,
-            "services": "Musculação, Crossfit, Samba",
-            "gender": "F",
-            "created_at": 1588876555728
-        }
-    ],
-    "members": []
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Ricardo Brasil da Silva",
+      "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+      "birth": 799804800000,
+      "services": "Abdominal, Crossfit, JiuJitsu",
+      "gender": "F",
+      "created_at": 1588861597078
+    },
+    {
+      "id": 2,
+      "name": "Ronaldo",
+      "avatar_url": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "birth": 796608000000,
+      "services": "Crossfit, musculação, boxe",
+      "gender": "M",
+      "created_at": 1588864912614
+    },
+    {
+      "id": 4,
+      "name": "Ingrid Thais Lopes",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 700704000000,
+      "services": "Musculação, Crossfit, Samba",
+      "gender": "F",
+      "created_at": 1588875776762
+    },
+    {
+      "id": 5,
+      "name": "Ingrid 2",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 700876800000,
+      "services": "Musculação, Crossfit, Samba",
+      "gender": "F",
+      "created_at": 1588876365105
+    },
+    {
+      "id": 6,
+      "name": "Ingrid 2",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 700876800000,
+      "services": "Musculação, Crossfit, Samba",
+      "gender": "F",
+      "created_at": 1588876460103
+    },
+    {
+      "id": 7,
+      "name": "Ingrid 2",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 700876800000,
+      "services": "Musculação, Crossfit, Samba",
+      "gender": "F",
+      "created_at": 1588876536026
+    },
+    {
+      "id": 8,
+      "name": "Ingrid 2",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 700876800000,
+      "services": "Musculação, Crossfit, Samba",
+      "gender": "F",
+      "created_at": 1588876555728
+    },
+    {
+      "id": 8,
+      "name": "Transparencia",
+      "avatar_url": "https://images.unsplash.com/photo-1518617840859-acd542e13a99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80",
+      "birth": 796694400000,
+      "services": "Crossfit, musculação, boxe",
+      "gender": "M",
+      "created_at": 1588949415541
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "base",
+      "avatar_url": "https://images.unsplash.com/photo-1532382752999-45b3dc5d4bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+      "birth": 976406400000,
+      "gender": "M",
+      "created_at": 1588949481321
+    }
+  ]
 }

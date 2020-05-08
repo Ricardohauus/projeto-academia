@@ -3,8 +3,9 @@ const routes = express.Router()
 const Instructors = require("./controllers/instructors")
 const Members = require("./controllers/members")
 
-/* Instructors Routes */
 routes.get("/", Instructors.index)
+
+/* Instructors Routes */
 routes.get("/instructors/create", Instructors.create)
 routes.get("/instructors", Instructors.index)
 routes.get("/instructors/:id", Instructors.show)
@@ -14,7 +15,6 @@ routes.put("/instructors", Instructors.saveOrUpdate)
 routes.delete("/instructors", Instructors.delete)
 
 /* Members Routes */
-routes.get("/", Members.index)
 routes.get("/members/create", Members.create)
 routes.get("/members", Members.index)
 routes.get("/members/:id", Members.show)
