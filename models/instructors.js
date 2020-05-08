@@ -2,6 +2,10 @@ const fs = require("fs")
 const data = require("../data.json")
 const moment = require("moment")
 
+exports.index = function (req, res) {
+  return res.render("../views/instructors/index", { instructors: data.instructors })
+}
+
 exports.saveOrUpdate = function (req, res) {
 
   const keys = Object.keys(req.body)
@@ -94,3 +98,4 @@ exports.delete = function (req, res) {
     return res.redirect(`/instructors`)
   })
 }
+
