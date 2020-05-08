@@ -18,7 +18,7 @@ exports.saveOrUpdate = function (req, res) {
     }
   }
 
-  let { id, avatar_url, birth, name, gender } = req.body;
+  let { id, avatar_url, birth, name, gender, email, blood, weight, height } = req.body;
   birth = Date.parse(req.body.birth);
   let editar = false;
 
@@ -27,7 +27,7 @@ exports.saveOrUpdate = function (req, res) {
     const created_at = Date.now();
     id = Number(data.members.length) + 1;
     data.members.push({
-      id, name, avatar_url, birth, gender, created_at
+      id, name, avatar_url, birth, gender, created_at, email, blood, weight, height
     });
   } else {
     editar = true
@@ -41,7 +41,7 @@ exports.saveOrUpdate = function (req, res) {
     if (!foundMember) return send("Membro não encontrado!")
     const member = {
       ...foundMember,
-      avatar_url, birth, name, gender
+      avatar_url, birth, name, gender, email, blood, weight, height
     }
     data.members[index] = member;
   }
