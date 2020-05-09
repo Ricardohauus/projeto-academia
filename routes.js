@@ -3,7 +3,9 @@ const routes = express.Router()
 const Instructors = require("./controllers/instructors")
 const Members = require("./controllers/members")
 
-routes.get("/", Instructors.index)
+routes.get("/", function (req, res) {
+  res.redirect("/instructors")
+})
 
 /* Instructors Routes */
 routes.get("/instructors/create", Instructors.create)
